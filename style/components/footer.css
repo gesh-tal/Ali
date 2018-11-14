@@ -1,0 +1,151 @@
+footer {
+	width: 100%;
+	display: flex;
+}
+
+.author {
+	width: 35%;
+	align-items: flex-start;
+	background-image: url('../../images/author bg.png');
+	background-size: cover;
+	color: #fff;
+	padding: 0;
+	padding: 5% 3%;
+}
+
+.author .title {
+	margin-bottom: 63%;
+}
+
+.author .title_bold {
+	margin-top: 10%;
+	margin-bottom: 3%;
+}
+
+.form {
+	width: 65%;
+	filter: brightness(0.8);
+	background-image: url('../../images/callback bg.png');
+	background-size: cover;
+	color: #fff;
+	padding: 5% 3%;
+}
+
+.form input, textarea {
+	padding: 2%;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.form input {
+	width: 35%;
+	margin: 5% 0.5% 2%;
+}
+
+textarea {
+	width: 72%;
+}
+
+input::placeholder, textarea::placeholder {
+	color: #fff;
+}
+
+#submit {
+	width: 13%;
+	margin-bottom: 8%;
+}
+
+.social {
+	display: flex;
+}
+
+.social_bg {
+	width: 5%;
+	height: 40px;	
+	border-radius: 10px;
+	margin-right: 1%;
+	margin-bottom: 4%;
+}
+
+.bg1 {
+	background-image: url('../../images/Facebook.png');
+	background-color: #345bb4;
+	border: 1px solid #345bb4;
+}
+
+.bg2 {
+	background-image: url('../../images/Dribbble.png');
+	background-color: #e64895;
+	border: 1px solid #e64895;
+}
+
+.bg3 {
+	background-image: url('../../images/Twitter.png');
+	background-color: #00b4ff;
+	border: 1px solid #00b4ff;
+}
+
+.bg1, .bg2, .bg3 {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.text, .title, .title_bold {
+	position: relative;
+}
+
+@media (max-width: 425px) {
+	footer {
+		flex-direction: column;
+	}
+
+	.author, .form {
+		width: 100%;
+		padding: 10%;
+	}
+
+	.form input {
+	    width: 48%;
+	    margin-bottom: 5%;
+	    padding: 4%;
+	}
+
+	textarea {
+	    width: 99%;
+	    padding: 4%;
+	}
+
+	#submit {
+	    width: 20%;
+	}
+
+	.social_bg {
+	    width: 13%;
+	    margin-right: 3%;
+	}
+}
+
+@media (max-width: 320px) {
+
+	.form {
+		background-position: center center;
+	}
+
+	.form input {
+	    width: 98%;
+	}
+
+	textarea {
+	    margin-top: 5%;
+	}
+
+	#submit {
+	    width: 23%;
+	}
+
+	.social_bg {
+	    width: 15%;
+	}
+}
